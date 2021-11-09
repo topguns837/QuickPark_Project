@@ -1,3 +1,3 @@
-web: gunicorn mapproject.wsgi:application --log-file - --log-level debug
+web: gunicorn wsgi:app
 heroku ps:scale web=1
 python manage.py migrate
