@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'q&6-776h2-=9y5a84+fq29l=a+p#_9ns77!qte^+fj550#x5(w'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['topguns.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -124,3 +124,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/map'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
